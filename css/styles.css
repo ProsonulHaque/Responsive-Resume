@@ -1,0 +1,156 @@
+/* Default: Mobile View */
+
+
+/* Base Style */
+.container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 2%;
+  }
+  .c1, .c2, .c3 {
+    width: 100%;
+  }
+  .c1{
+      background: #9880a8;
+  }
+  .c2{
+      background: #726ba6;
+      padding: 2%;
+  }
+  .c3{
+      background: #854594;
+      padding: 2%;
+  }
+  .grad{
+      width: 100%;
+      height: 5px;
+  }
+/* Base Style */
+
+
+
+/* Additional Styles */
+body{
+    background: #133755;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 110%;
+    animation: transition 12s linear infinite alternate;
+}
+.header{
+    border-bottom: 1px solid silver;
+    padding: 5%;
+    text-align: center;
+    font-weight: bold;
+}
+.c2 .header{
+    padding: 4%;
+}
+.c1 img{
+    width: 100%;
+    border: 1px solid white;
+}
+.image{
+    padding: 5% 10%;
+    padding-bottom: 0;
+}
+.c1 .header{
+    border: none;
+}
+.info{
+    display: flex;
+    padding: 1% 10%;
+    overflow: hidden;
+    font-size: 120%;
+}
+.info-left{
+    flex: 1;
+}
+.info-right{
+    flex: 1;
+    font-weight: 200;
+}
+.h6-right{
+    font-weight: 400;
+}
+#ref{
+    text-align: center;
+    margin: 5%;
+}
+a{
+    color: white;
+}
+.projects{
+    font-weight: 300;
+    padding: 0 1%;
+    margin: 0;
+}
+/* Additional Styles */
+
+
+
+/* Animation keyframe*/
+@keyframes transition{
+    0%{background: #000033;}
+    25%{background: #173f5f;}
+    50%{background: #20639b;}
+    75%{background: #3caea3;}
+    100%{background: #f6d55c;}
+}
+/* Animation keyframe */
+
+
+
+/* ------Break Points------ */
+
+/* Tablet View */
+@media (min-width: 500px) {
+  .c1, .c2, .c3{
+      padding: 0;;
+  }
+  .c1 {
+    width: 59%;
+  }
+  .c2 {
+    width: 40%;
+  }
+  .c3 {
+    width: 100%;
+  }
+  .grad{
+      width: 1%;
+  }
+  #grad2{
+      height: 0.4rem;
+  }
+  #ref{
+    margin: 3%;
+  }
+  .c3 .info-right{
+      text-align: center;
+  }
+}
+/* Desktop & Laptop View */
+@media (min-width: 850px) {
+  .c1 {
+    width: 23%;
+  }
+  .c2{
+      width: 52%;
+  }
+  .c3 {
+    width: 23%;
+  }
+  .grad{
+      width: 1%;
+  }
+  #ref{
+      margin: 8% 0;
+  }
+  .info{
+      font-size: 100%;
+  }
+}
+/* ------Break Points------ */
